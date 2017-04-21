@@ -1,32 +1,41 @@
-{{!-- This is the base layout for your project, and will be used on every page. --}}
-
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Hostel Madrid</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:900|Merriweather|Open+Sans:300,800" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
 
+    <svg xmlns="http://www.w3.org/2000/svg" class="hide">
+        <defs>
+            <symbol id="logoBlk" viewBox="0 0 162 69"><title>Hostel Madrid logo (black)</title><path d="M22.2 39.9h3.1l2.5 4.1 2.5-4.1h3.1v10.5h-2.9v-6l-2.7 4.1h-.1L25 44.4v6h-2.8V39.9zM48.8 39.9h2.8l4.5 10.6H53l-.7-1.9h-4.1l-.7 1.9h-3l4.3-10.6zm2.6 6.4l-1.2-3-1.2 3h2.4zM67.6 39.9h4.1c3.7 0 5.9 2.2 5.9 5.2s-2.2 5.3-6 5.3h-4V39.9zm2.9 2.6v5.3h1.2c1.8 0 2.9-1 2.9-2.6 0-1.7-1.2-2.7-2.9-2.7h-1.2zM88 39.9h5c1.6 0 2.7.4 3.4 1.1.6.6.9 1.4.9 2.4 0 1.6-.9 2.7-2.2 3.2l2.5 3.7h-3.3l-2.1-3.2h-1.3v3.2H88V39.9zm4.8 5.1c1 0 1.6-.5 1.6-1.2 0-.8-.6-1.3-1.6-1.3h-1.9V45h1.9zM110.8 39.9h2.9v10.5h-2.9V39.9zM127.6 39.9h4.1c3.7 0 5.9 2.2 5.9 5.2s-2.2 5.3-6 5.3h-4V39.9zm2.9 2.6v5.3h1.2c1.8 0 2.9-1 2.9-2.6 0-1.7-1.2-2.7-2.9-2.7h-1.2z"/><g><path d="M23.2 19.4h2.9v3.9h3.7v-3.9h2.9v10.5h-2.9v-4h-3.7v4h-2.9V19.4zM44.7 24.7c0-3 2.4-5.5 5.7-5.5 3.2 0 5.6 2.4 5.6 5.4 0 3-2.4 5.4-5.7 5.4-3.2.1-5.6-2.3-5.6-5.3zm8.3 0c0-1.6-1.1-2.9-2.7-2.9s-2.7 1.3-2.7 2.8c0 1.5 1.1 2.8 2.7 2.8 1.7.1 2.7-1.2 2.7-2.7zM67.1 28.3l1.6-1.9c1 .8 2.2 1.3 3.4 1.3.8 0 1.2-.3 1.2-.7 0-.4-.3-.7-1.8-1-2.2-.5-4-1.1-4-3.3 0-1.9 1.5-3.4 4.1-3.4 1.8 0 3.2.5 4.3 1.4l-1.5 2.1c-1-.7-2-1-2.9-1-.7 0-1 .3-1 .7 0 .5.4.7 1.8 1 2.4.5 3.9 1.3 3.9 3.3 0 2.1-1.7 3.4-4.2 3.4-1.8-.1-3.6-.7-4.9-1.9zM90.4 21.9h-3.1v-2.5h9.2v2.5h-3.1v7.9h-2.9v-7.9zM108.2 19.4h8.4v2.5H111v1.6h5v2.3h-5v1.7h5.6V30h-8.5V19.4zM128.7 19.4h2.9v7.9h5.1v2.5h-8V19.4z"/></g><g><path d="M161 67.8H1V1.2h160v66.6zm-157-3h154V4.2H4v60.6z"/></g></symbol>
+            <symbol id="logoWht" viewBox="0 0 162 69"><title>Hostel Madrid logo (white)</title><path style="fill:#ffffff;" d="M22.2 39.9h3.1l2.5 4.1 2.5-4.1h3.1v10.5h-2.9v-6l-2.7 4.1h-.1L25 44.4v6h-2.8V39.9zM48.8 39.9h2.8l4.5 10.6H53l-.7-1.9h-4.1l-.7 1.9h-3l4.3-10.6zm2.6 6.4l-1.2-3-1.2 3h2.4zM67.6 39.9h4.1c3.7 0 5.9 2.2 5.9 5.2s-2.2 5.3-6 5.3h-4V39.9zm2.9 2.6v5.3h1.2c1.8 0 2.9-1 2.9-2.6 0-1.7-1.2-2.7-2.9-2.7h-1.2zM88 39.9h5c1.6 0 2.7.4 3.4 1.1.6.6.9 1.4.9 2.4 0 1.6-.9 2.7-2.2 3.2l2.5 3.7h-3.3l-2.1-3.2h-1.3v3.2H88V39.9zm4.8 5.1c1 0 1.6-.5 1.6-1.2 0-.8-.6-1.3-1.6-1.3h-1.9V45h1.9zM110.8 39.9h2.9v10.5h-2.9V39.9zM127.6 39.9h4.1c3.7 0 5.9 2.2 5.9 5.2s-2.2 5.3-6 5.3h-4V39.9zm2.9 2.6v5.3h1.2c1.8 0 2.9-1 2.9-2.6 0-1.7-1.2-2.7-2.9-2.7h-1.2z"/><g><path style="fill:#ffffff;" d="M23.2 19.4h2.9v3.9h3.7v-3.9h2.9v10.5h-2.9v-4h-3.7v4h-2.9V19.4zM44.7 24.7c0-3 2.4-5.5 5.7-5.5 3.2 0 5.6 2.4 5.6 5.4 0 3-2.4 5.4-5.7 5.4-3.2.1-5.6-2.3-5.6-5.3zm8.3 0c0-1.6-1.1-2.9-2.7-2.9s-2.7 1.3-2.7 2.8c0 1.5 1.1 2.8 2.7 2.8 1.7.1 2.7-1.2 2.7-2.7zM67.1 28.3l1.6-1.9c1 .8 2.2 1.3 3.4 1.3.8 0 1.2-.3 1.2-.7 0-.4-.3-.7-1.8-1-2.2-.5-4-1.1-4-3.3 0-1.9 1.5-3.4 4.1-3.4 1.8 0 3.2.5 4.3 1.4l-1.5 2.1c-1-.7-2-1-2.9-1-.7 0-1 .3-1 .7 0 .5.4.7 1.8 1 2.4.5 3.9 1.3 3.9 3.3 0 2.1-1.7 3.4-4.2 3.4-1.8-.1-3.6-.7-4.9-1.9zM90.4 21.9h-3.1v-2.5h9.2v2.5h-3.1v7.9h-2.9v-7.9zM108.2 19.4h8.4v2.5H111v1.6h5v2.3h-5v1.7h5.6V30h-8.5V19.4zM128.7 19.4h2.9v7.9h5.1v2.5h-8V19.4z"/></g><g><path style="fill:#ffffff;" d="M161 67.8H1V1.2h160v66.6zm-157-3h154V4.2H4v60.6z"/></g></symbol>
+        </defs>
+    </svg>
+
     <header>
+        <div class="row show-for-small-only">
+            <ul class="menu expanded align-center">
+                <li><a href="index.html"><svg style="width:120px;height:50px;max-width:100%;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoBlk"></use></svg></a></li>
+            </ul>
+        </div>
         <div class="row show-for-medium">
             <ul class="menu expanded align-center">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#"><img src="http://placehold.it/160x67" alt="" /></a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="index.html"><svg style="width:162px;height:69px;max-width:100%;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoBlk"></use></svg></a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="#">Search</a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
         {{> body}}
     </main>
 
@@ -34,7 +43,13 @@
         <div class="row align-middle">
             <div class="small-12 medium-6 columns">
                 <div class="row align-middle">
-                    <div class="shrink columns"><a href="#"><img src="http://placehold.it/97x40" alt="" /></a></div>
+                    <div class="shrink columns">
+                        <a href="index.html">
+                            <svg style="width:97px;height:40px;max-width:100%;margin-top:8px;">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logoWht"></use>
+                            </svg>
+                        </a>
+                    </div>
                     <div class="columns">
                         <ul class="menu menu-info vertical">
                             <li><a href="#">info@hostelmadrid</a></li>

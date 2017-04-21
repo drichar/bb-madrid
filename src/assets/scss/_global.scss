@@ -7,3 +7,46 @@ body {
 body > main {
     flex: 1;
 }
+
+main {
+    section {
+        padding: 3.0rem 0;
+    }
+    section.gray {
+        background-color: $light-gray;
+    }
+    .breadcrumbs {
+        margin-bottom: 0.5rem;
+        li {
+            font-family: 'Lato', sans-serif;
+            color: $primary-color;
+            a {
+                color: $black;
+            }
+        }
+    }
+
+    .breadcrumbs li:not(:last-child)::after {
+        margin: 0 0.375rem;
+        content: "/";
+        color: $medium-gray;
+    }
+
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: -1.5px;
+        span {
+            font-weight: 300;
+        }
+    }
+
+    p {
+        font-family: 'Merriweather', serif;
+    }
+
+    p.red-text {
+        color: $secondary-color;
+    }
+}
