@@ -60,4 +60,77 @@ main {
     p.red-text {
         color: $secondary-color;
     }
+
+    .promo {
+        position: relative;
+        margin-bottom: 2.0rem;
+
+        img {
+            width: 100%;
+        }
+
+        .promo--text {
+            position: absolute;
+            left: 0; bottom: 0; right: 0;
+            color: $white;
+            padding: 1.5rem;
+
+            h1 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 4.375rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                letter-spacing: -1.5px;
+                line-height: 1;
+            }
+
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: -1.5px;
+                line-height: 1;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .promo--text.style-1 {
+            background-color: rgba(233,41,86,0.75);
+        }
+
+        .promo--text.style-2 {
+            background-color: rgba(0,0,0,0.75);
+            color: $primary-color;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .promo {
+        .promo--text {
+            h1 {
+                font-size: 3.5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .promo {
+        max-width: 320px;
+        margin: 0 auto 2.0rem !important;
+
+        .promo--text {
+            h1 {
+                font-size: 3.5rem;
+            }
+            h2 {
+                font-size: 1.75rem;
+            }
+        }
+    }
 }

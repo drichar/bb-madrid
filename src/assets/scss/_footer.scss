@@ -24,3 +24,13 @@ footer {
         margin-right: 0;
     }
 }
+
+
+
+@media screen and (max-width: 639px) {
+    footer {
+        .menu-social {
+            margin-top: 1.0rem;
+        }
+    }
+}

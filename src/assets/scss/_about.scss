@@ -1,0 +1,52 @@
+.about__welcome {
+    .button, .button:hover, .button:focus {
+        margin-top: 0.75rem;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $dark-gray;
+        background: transparent;
+        border: 2px solid $dark-gray;
+
+        i {
+            margin-left: 0.75rem;
+        }
+    }
+}
+
+.about__main {
+    margin-top: 2.0rem;
+
+    .about__main--map {
+        background: url('../img/map.jpg') no-repeat center top;
+        background-size: cover;
+        height: 100%;
+        margin-left: 1.0rem;
+    }
+
+    .promo {
+        margin-bottom: 0;
+
+        .button {
+            margin-top: 0.75rem;
+            font-family: 'Lato', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $white;
+            background: transparent;
+            border: 2px solid $white;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 639px) {
+    .about__main {
+        .about__main--map {
+            height: 50vw;
+            margin-bottom: 2.0rem;
+            margin-left: 0;
+        }
+    }
+}
