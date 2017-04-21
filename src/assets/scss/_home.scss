@@ -24,7 +24,8 @@
 
     .orbit-bullets {
         position: absolute;
-        right: 0; bottom: 0; width: 33%;
+        right: 0; bottom: 0;
+        width: 33%;
         margin-top: 0.8rem;
         margin-bottom: 0.8rem;
         text-align: center;
@@ -64,12 +65,34 @@
 
 
 @media screen and (max-width: 1023px) {
+    .home__welcome {
+        margin: 4.0rem 0 3.0rem;
+    }
+
+    .orbit {
+        .orbit-bullets {
+            width: 100%;
+            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+    }
     .promo {
         margin: 0 0 2.0rem;
     }
 }
 
 @media screen and (max-width: 639px) {
+    .home__welcome {
+        margin: 3.5rem 0 3.0rem;
+    }
+
+    .orbit {
+        .orbit-bullets {
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
     .home__welcome {
         h2 {
             font-size: 2.0rem;

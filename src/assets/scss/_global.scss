@@ -107,6 +107,12 @@ main {
 
 
 @media screen and (max-width: 1023px) {
+    main {
+        section > .row {
+            max-width: 95%;
+        }
+    }
+
     .promo {
         .promo--text {
             h1 {
@@ -120,6 +126,15 @@ main {
 }
 
 @media screen and (max-width: 639px) {
+    main {
+        section > .row {
+            max-width: 90%;
+        }
+        h2 {
+            font-size: 2.0rem;
+        }
+    }
+
     .promo {
         max-width: 320px;
         margin: 0 auto 2.0rem !important;

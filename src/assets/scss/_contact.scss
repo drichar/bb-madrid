@@ -43,3 +43,35 @@
         }
     }
 }
+
+
+
+@media screen and (max-width: 959px) {
+    .contact {
+        .contact__type {
+            h5 {
+                font-size: 1.0rem;
+            }
+
+            .menu-info > li, .menu-info > li > a {
+                font-size: 1.0rem;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .contact {
+        .contact__type {
+            h5 {
+                font-size: 1.0rem;
+            }
+
+            .menu-info > li, .menu-info > li > a {
+                font-size: 1.0rem;
+                line-height: 1.2;
+            }
+        }
+    }
+}
