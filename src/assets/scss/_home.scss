@@ -1,0 +1,137 @@
+.orbit {
+    margin-top: -3.0rem;
+    // margin-bottom: 4.0rem;
+
+    .orbit-container {
+        // max-height: 50vw !important;
+    }
+
+    .orbit-previous, .orbit-next {
+        border: 3px solid #ffffff;
+        margin: 0 2.0rem;
+        padding: 0.75rem;
+        font-size: 2.0rem;
+        font-stretch: condensed;
+    }
+
+    .orbit-previous {
+        padding-right: 1.0rem;
+    }
+
+    .orbit-next {
+        padding-left: 1.0rem;
+    }
+
+    .orbit-bullets {
+        position: absolute;
+        right: 0; bottom: 0; width: 33%;
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+        text-align: center;
+
+        button {
+            width: 1.0rem;
+            height: 1.0rem;
+            margin: 1.0rem 0.375rem;
+            border: 2px solid #ffffff;
+            background-color: transparent;
+        }
+
+        button:hover {
+            background-color: rgba(255,255,255,0.67);
+        }
+
+        button.is-active {
+            background-color: #ffffff;
+        }
+    }
+}
+
+
+.home__welcome {
+    margin: 5.0rem 0 3.0rem;
+}
+
+.home__point {
+    margin-bottom: 2.0rem;
+}
+
+.home__promo {
+    position: relative;
+    margin-bottom: 2.0rem;
+    margin-left: 4.0rem;
+
+    img {
+        width: 100%;
+    }
+
+    .home__promo--text {
+        position: absolute;
+        left: 0; bottom: 0; right: 0;
+        // background: rgba(0,0,0,0.5);
+        color: $white;
+        padding: 1.5rem;
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 4.375rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -1.5px;
+            line-height: 1;
+        }
+
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: -1.5px;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .home__promo--text.style-1 {
+        background-color: rgba(233,41,86,0.75);
+    }
+
+    .home__promo--text.style-2 {
+        background-color: rgba(0,0,0,0.75);
+        color: $primary-color;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .home__promo {
+        margin: 0 0 2.0rem;
+
+        .home__promo--text {
+            h1 {
+                font-size: 3.5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .home__welcome {
+        h2 {
+            font-size: 2.0rem;
+        }
+    }
+    .home__promo {
+        margin: 0 2.0rem 2.0rem;
+
+        .home__promo--text {
+            h1 {
+                font-size: 3.5rem;
+            }
+            h2 {
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
