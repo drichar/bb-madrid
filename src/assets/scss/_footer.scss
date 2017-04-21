@@ -1,0 +1,25 @@
+footer {
+    background-color: $x-dark-gray;
+    padding: 2.0rem 0;
+
+    .menu-info > li > a {
+        padding: 0.25rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 0.75rem;
+        color: $white;
+    }
+
+    .menu-social {
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        float: right;
+    }
+
+    .menu-social > li > a > i {
+        color: $primary-color;
+        font-size: 1.25rem;
+        margin-right: 0;
+    }
+}

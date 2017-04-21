@@ -1,0 +1,20 @@
+header {
+    background-color: $primary-color;
+    padding: 20px 0;
+
+    .row {
+        max-width: 60rem;
+    }
+
+    .menu > li {
+        text-align: center;
+    }
+
+    .menu > li > a {
+        color: $black;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+}

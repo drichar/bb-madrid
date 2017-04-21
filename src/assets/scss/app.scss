@@ -4,6 +4,10 @@
 @import 'foundation';
 @import 'motion-ui';
 
+@import 'global';
+@import 'header';
+@import 'footer';
+
 @include foundation-global-styles;
 // @include foundation-grid;
 @include foundation-flex-grid;
