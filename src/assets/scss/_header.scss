@@ -17,6 +17,16 @@ header {
         font-size: 0.75rem;
         letter-spacing: 2px;
     }
+
+    .mobile-sub-menu {
+        margin-bottom: -1.0rem;
+        li {
+            a {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
 }
 
 
