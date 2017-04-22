@@ -70,14 +70,17 @@
 
     <script src="{{root}}assets/js/app.js"></script>
     <script>
-        // init Masonry
-        var $grid = $('.masonry-grid').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: 320
-        });
-        // layout Isotope after each image loads
-        $grid.imagesLoaded().progress( function() {
-            $grid.masonry();
+        $(function(){
+            $('.orbit-bullets').css('opacity', '1');
+            // init Masonry
+            var $grid = $('.masonry-grid').masonry({
+                itemSelector: '.grid-item',
+                columnWidth: 320
+            });
+            // layout Isotope after each image loads
+            $grid.imagesLoaded().progress( function() {
+                $grid.masonry();
+            });
         });
     </script>
 </body>

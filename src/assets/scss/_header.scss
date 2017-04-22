@@ -18,3 +18,13 @@ header {
         letter-spacing: 2px;
     }
 }
+
+
+@media screen and (max-width: 1023px) {
+    header {
+        .menu > li > a {
+            font-size: 0.625rem;
+            letter-spacing: 2px;
+        }
+    }
+}
