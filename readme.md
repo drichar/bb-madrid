@@ -15,7 +15,7 @@ Made with [Foundation for Sites](http://foundation.zurb.com/sites). It has a Gul
 
 ## Links
 
-[Production build](http://doug.outerworld.org/bb/madrid/)
+http://doug.outerworld.org/bb/madrid/
 
 ## Author
 
